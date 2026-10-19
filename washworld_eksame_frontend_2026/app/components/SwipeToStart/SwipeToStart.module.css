@@ -1,0 +1,72 @@
+/* Matches the wash page pill visual: rounded track, circular green thumb */
+
+.swipeButton {
+  margin-top: 16px;
+  position: relative;
+  width: 100%;
+  border: none;
+  height: 52px;
+  border-radius: 999px;
+  background: #d6d6d8;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  gap: 10px;
+  overflow: hidden;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.flush {
+  margin-top: 0;
+}
+
+.thumb {
+  position: relative;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 999px;
+  background: #12db81;
+  color: #001f0f;
+  font-size: 20px;
+  display: grid;
+  place-items: center;
+  touch-action: none;
+  cursor: grab;
+  z-index: 1;
+  /* prevent default absolute-positioned drift when offset is applied */
+  transform: translateX(0);
+}
+
+.thumb:active {
+  cursor: grabbing;
+}
+
+.swipeLabel {
+  flex: 1;
+  text-align: center;
+  color: #757678;
+  font-size: 16px;
+  font-weight: 500;
+  pointer-events: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Completed state */
+.completed {
+  background: #0a3d22;
+}
+
+.completed .thumb {
+  background: #06c167;
+  color: #fff;
+}
+
+.completed .swipeLabel {
+  color: #06c167;
+  font-weight: 700;
+}

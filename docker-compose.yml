@@ -1,0 +1,122 @@
+name: washworld
+
+services:
+  frontend:
+    build:
+      context: ./washworld_eksame_frontend_2026
+      dockerfile: Dockerfile
+      args:
+        # Inlined into the browser bundle at build time (the browser calls the API directly)
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:80}
+    image: washworld/frontend:1.0
+    container_name: washworld_eksamen_frontend
+    depends_on:
+      web:
+        condition: service_healthy
+    ports:
+      - "3000:3000"
+    networks:
+      - washworld_net
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: 256M
+
+  web:
+    build:
+      context: ./washworld_eksamen_backend_2026
+      dockerfile: Dockerfile
+    image: washworld/backend:1.0
+    container_name: washworld_eksamen_flask
+    depends_on:
+      mariadb:
+        condition: service_healthy
+    ports:
+      - "80:5000" # host port 80 -> container port 5000 (the container runs as non-root)
+    volumes:
+      - flask_sessions:/app/flask_session # named volume: sessions survive restarts
+    networks:
+      - washworld_net
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: 256M
+
+  mariadb:
+    image: mariadb:10.6.20
+    container_name: washworld_eksamen_mariadb
+    environment:
+      # The backend (x.py) connects as root with this password to this database
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-password}
+      MARIADB_DATABASE: washworld_eksamen
+    volumes:
+      - mariadb_data:/var/lib/mysql # database files persist here
+      - ./db/init:/docker-entrypoint-initdb.d:ro # schema is loaded on first start only
+    ports:
+      - "127.0.0.1:3306:3306" # only reachable from this machine
+    networks:
+      - washworld_net
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    deploy:
+      resources:
+        limits:
+          cpus: "1.00"
+          memory: 512M
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5.2
+    container_name: washworld_eksamen_phpmyadmin
+    depends_on:
+      mariadb:
+        condition: service_healthy
+    environment:
+      PMA_HOST: mariadb
+    ports:
+      - "127.0.0.1:8080:80" # only reachable from this machine
+    networks:
+      - washworld_net
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: 256M
+
+networks:
+  washworld_net:
+    name: washworld_net
+    driver: bridge
+
+volumes:
+  mariadb_data:
+    name: backend_mariadb_data # keeps the DB volume created by the old backend-only compose
+  flask_sessions:
+    name: washworld_flask_sessions

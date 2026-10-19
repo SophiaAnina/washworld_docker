@@ -1,0 +1,10 @@
+version: "3"
+agent:
+  web_addr: 0.0.0.0:4040 # inspector, published on 127.0.0.1:4040 by docker-compose.ngrok.yml
+tunnels:
+  frontend:
+    proto: http
+    addr: frontend:3000
+  api:
+    proto: http
+    addr: web:5000

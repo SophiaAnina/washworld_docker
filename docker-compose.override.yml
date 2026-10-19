@@ -1,0 +1,9 @@
+# Development settings. Docker Compose merges this file automatically with
+# docker-compose.yml when you run a plain `docker compose up`.
+services:
+  web:
+    environment:
+      FLASK_DEBUG: "1" # auto-reloads when the mounted source code changes
+    volumes:
+      # bind mount: edit code on the host, Flask reloads it in the container
+      - ./washworld_eksamen_backend_2026:/app:ro

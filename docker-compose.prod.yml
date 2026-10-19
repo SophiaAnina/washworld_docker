@@ -1,0 +1,27 @@
+# Production-like run: code is the one baked into the image (no bind mount, no debug),
+# no database port on the host, phpMyAdmin only on request.
+#   docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
+# (naming both files explicitly stops docker-compose.override.yml from being loaded)
+x-logging: &default-logging
+  driver: json-file
+  options:
+    max-size: "10m"
+    max-file: "3"
+
+services:
+  frontend:
+    restart: always
+    logging: *default-logging
+
+  web:
+    restart: always
+    logging: *default-logging
+
+  mariadb:
+    restart: always
+    ports: !reset []
+    logging: *default-logging
+
+  phpmyadmin:
+    profiles: ["tools"] # start with: --profile tools
+    logging: *default-logging

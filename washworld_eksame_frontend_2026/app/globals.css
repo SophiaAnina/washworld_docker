@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-ExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background: #111;
+  color: #fff;
+  font-family: var(--font-primary);
+}
+
+:root {
+   --background: #0a0a0a;
+    --foreground: #ededed;
+  --font-primary: "Gilroy", var(--font-inter), sans-serif;
+
+  --color-primary: #22c55e;
+  --color-active-bg: #06c167;
+  --color-active-bg-transparent: #0ce57847;
+
+  /* Mobile typography scale */
+  --display-h1-size: 36px;
+  --display-h1-line: 43px;
+  --h2-size: 32px;
+  --h2-line: 38px;
+  --h3-size: 24px;
+  --h3-line: 29px;
+  --h4-size: 20px;
+  --h4-line: 24px;
+  --h5-size: 18px;
+  --h5-line: 22px;
+  --h6-size: 16px;
+  --h6-line: 19px;
+  --body-lg-size: 20px;
+  --body-lg-line: 30px;
+  --body-md-size: 16px;
+  --body-md-line: 24px;
+  --body-sm-size: 14px;
+  --body-sm-line: 21px;
+  --body-xs-size: 12px;
+  --price-light-size: 10px;
+  --price-light-line: 38px;
+  --price-light-line-small: 16px;
+  --label-extra-bold-size: 12px;
+  --link-medium-size: 16px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}

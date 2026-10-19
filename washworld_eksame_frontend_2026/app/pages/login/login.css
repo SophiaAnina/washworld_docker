@@ -1,0 +1,95 @@
+body {
+  background: var(--background);
+  color: var(--foreground);
+
+}
+h1{
+    font-family: var(--font-primary);
+    font-size: var(--display-h1-size);
+    margin-bottom: 80px;
+    text-align: center !important;
+    font-weight: 800;
+}
+
+.login{
+     padding: 20px 25px 0 25px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.icon-container{
+  position:absolute;
+  right: 5px;
+ 
+  font-size: 18px;
+}
+.glemtAdgangskode{
+  color: var(--secondary-dark-mode-80-gr-text-secondary, rgba(156, 163, 175, 0.80));
+
+/* mobil/body_sm_medium */
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 19px; /* 158.333% */
+text-align: end;
+
+
+}
+.tilbageLink{
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+ .nextButton{
+  border-radius: 100%;
+  position: absolute;
+  top: 90%;
+  right: 25px;
+  width: fit-content;
+  background-color: var(--primary-colors-brand-grn-hvid-baggrund, #06C167);
+  padding: 16px;
+  color: white;
+  opacity: 1;
+  transition: background 0.2s, opacity 0.2s;
+}
+.inputContainer{
+  margin-bottom: 0 !important;
+  display: flex;
+  flex-direction: column;
+  input{
+    border: 1px solid var(--primary-colors-brand-grn-hvid-baggrund, #06C167);
+    font-size: 12px;
+    padding: 6px 12px;
+    width: 100%;
+    
+  }
+}
+  label{
+    color: var(--secondary-dark-mode-80-gr-text-secondary, rgba(156, 163, 175, 0.80));
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 19px; /* 118.75% */
+  }
+  .pinInputContainer{
+      gap: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30%;
+  input{
+    width: 53px;
+    height: 53px;
+    border-bottom: 2px solid white;
+    text-align: center;
+  }
+  p{
+    color: var(--secondary-dark-mode-80-gr-text-secondary, rgba(156, 163, 175, 0.80));
+    
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+  }
+}

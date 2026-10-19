@@ -1,0 +1,254 @@
+.WashPage {
+  min-height: 100vh;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 0 0 100px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.washContent {
+  padding: 0 18px;
+}
+
+.h1{
+  margin-bottom: 0px;
+}
+
+.membershipCard {
+  margin-top: 10px;
+  border: 1px solid #07de88;
+  background: #015126;
+  padding: 14px 12px 18px;
+}
+
+.membershipTitle {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.membershipSubtitle {
+  margin: 6px 0 16px;
+  color: #08e184;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.locationRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.locationLabel {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.locationValue {
+  margin: 2px 0 0;
+  color: #14ef96;
+  font-size: 11px;
+}
+
+.switchButton {
+  border: none;
+  background: transparent;
+  color: #76a08f;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+  margin-top: 2px;
+  text-decoration: underline;
+}
+
+.queueRow {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.queueTag {
+  background: #ffbf24;
+  color: #0a0a0a;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 6px;
+}
+
+.queueText {
+  font-size: 11px;
+}
+
+.startWashButton {
+  margin-top: 16px;
+  width: 100%;
+  border: none;
+  height: 52px;
+  border-radius: 999px;
+  background: #d6d6d8;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  gap: 10px;
+}
+
+.startWashIconWrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: #12db81;
+  display: grid;
+  place-items: center;
+}
+
+.startWashIcon {
+  font-size: 20px;
+  color: #001f0f;
+}
+
+.startWashLabel {
+  color: #757678;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.purchaseSection {
+  margin-top: 14px;
+}
+
+.purchaseSection h2 {
+  margin: 0 0 10px;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: left;
+}
+
+.offer {
+  margin-bottom: 10px;
+}
+
+.offerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.offerNamePrice {
+  margin: 0;
+  color: #10e588;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.offerIncluded .offerNamePrice {
+  color: #2f2f2f;
+}
+
+.offerNote {
+  color: #09d37b;
+  font-size: 12px;
+}
+
+.orderButton {
+  margin-top: 6px;
+  width: 100%;
+  border: none;
+  background: #18e587;
+  color: #fff;
+  font-weight: 800;
+  font-size: 38px;
+  padding: 3px 0 4px;
+}
+
+.orderButtonDisabled {
+  background: #2b2c31;
+  color: #54565c;
+}
+
+.offerHelper {
+  margin: 6px 0 0;
+  color: #949494;
+  font-size: 10px;
+  line-height: 1.25;
+}
+
+.washHistory {
+  margin-top: 8px;
+  padding: 0;
+}
+
+.washHistoryTitle {
+  margin: 0 0 10px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: left;
+}
+
+.washHistoryList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.washHistoryItem {
+  display: flex;
+  align-items: center;
+  background: #111;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #222;
+}
+
+.washHistoryIconWrap {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.washHistoryIcon {
+  color: #00ff99;
+  font-size: 2rem;
+}
+
+.washHistoryInfo {
+  flex: 1;
+}
+
+.washHistoryLocation {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.washHistoryDateTime {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.washHistoryLabel {
+  background: #00ff99;
+  color: #111;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 0.25rem 0.75rem;
+  margin-left: 1rem;
+  align-self: flex-start;
+}
+.ProfilePage{
+  height: fit-content !important;
+  min-height: 0 !important;
+}

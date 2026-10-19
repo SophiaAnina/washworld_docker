@@ -1,0 +1,48 @@
+.brandHeader {
+  background: #030303;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 28px 20px 20px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.dashboardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  color: #06c167;
+  font-weight: 800;
+  margin: 0 0 6px;
+}
+
+.title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.muted {
+  color: #b5b5b5;
+  margin: 4px 0 0;
+}
+
+.badge {
+  background: #06c167;
+  color: #111;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+}

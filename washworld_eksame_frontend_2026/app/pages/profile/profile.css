@@ -1,0 +1,1512 @@
+/* WashHistory styles moved from WashHistory.css */
+.washHistory {
+  margin-top: 0rem; /*2*/
+  padding: 0 18px; /* Match side margins with other flows */
+}
+.washHistoryTitle {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.washHistoryList {
+  list-style: none;
+  padding: 0;
+  margin-top: 12;
+}
+.washHistoryItem {
+  display: flex;
+  align-items: center;
+  /* background: #111; */
+  /* border-radius: 8px; */
+  margin-bottom: 0.25rem;
+  padding: 0.75rem 0.75rem;
+  /* border: 1px solid #222; */
+  border-bottom: 1px solid #00d881;
+}
+.washHistoryItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #00d881;
+}
+.washHistoryItem:last-child {
+  border-bottom: none;
+}
+.washHistoryIconWrap {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+.washHistoryIcon {
+  color: #00ff99;
+  font-size: 2rem;
+}
+.washHistoryInfo {
+  flex: 1;
+}
+.washHistoryLocation {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.washHistoryDateTime {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+.washHistoryLabel {
+  background: #00ff99;
+  color: #111;
+  font-size: 0.75rem;
+  font-weight: 600;
+  /* border-radius: 4px; */
+  padding: 0.16rem 0.45rem;
+  margin-left: 1rem;
+  align-self: flex-start;
+}
+.ProfilePage {
+  min-height: 100vh;
+  overflow-y: auto;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding-bottom: 100px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.profileMenu {
+  margin-top: 90px;
+  padding: 0 18px;
+  display: grid;
+  gap: 22px;
+}
+
+.membershipView {
+  margin-top: 74px;
+  padding: 0 18px;
+}
+
+.membershipOptionsList {
+  margin-top: 34px;
+  display: grid;
+  gap: 40px;
+}
+
+.membershipOptionCard {
+  width: 100%;
+  min-height: 120px;
+  border: 1px solid #00d881;
+  border-radius: 0;
+  background: #05552d;
+  display: grid;
+  grid-template-columns: 84px 1fr 84px;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 14px;
+  text-align: center;
+  color: #f4f7f5;
+}
+
+.membershipOptionIconWrap {
+  width: 84px;
+  height: 84px;
+  border-radius: 999px;
+  background: #00a85f;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.membershipOptionIcon {
+  width: 34px;
+  height: 34px;
+  color: #f2fdf7;
+}
+
+.membershipOptionLabel {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.1;
+  justify-self: center;
+}
+
+.membershipDetails {
+  margin-top: 74px;
+  padding: 0 18px 120px;
+}
+
+.membershipPlanCard {
+  width: 100%;
+  min-height: 120px;
+  border: 1px solid #00d881;
+  background: #05552d;
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  gap: 14px;
+  align-items: center;
+  padding: 12px;
+}
+
+.membershipPlanIconWrap {
+  width: 84px;
+  height: 84px;
+  border-radius: 999px;
+  background: #00a85f;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.membershipPlanIconGroup {
+  color: #ecfff4;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin-top:6px;
+  margin-left:-2px;
+}
+
+.membershipPlanPeopleIcon {
+  width: 36px;
+  height: 36px;
+  color: #f0fff8;
+}
+
+.membershipPlanInfo {
+  min-width: 0;
+  margin-left: 20px;
+}
+
+.membershipPlanName {
+  margin: 0;
+  color: #00ff99;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1;
+  text-align: left;
+}
+
+.membershipPlanPrice {
+  margin: 2px 0 0;
+  color: #f3fff8;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.membershipPlanDate {
+  margin: 2px 0 0;
+  color: #e0f8eb;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.membershipPlanSubtitle {
+  margin: 2px 0 0;
+  color: #f6fcf8;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.membershipPlanDetails {
+  margin-top: 74px;
+  padding: 0 18px 120px;
+}
+
+.membershipIncludedTitle {
+  margin: 14px 0 10px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.membershipIncludedList {
+  list-style: none;
+  margin: 0;
+  padding: 0 22px 18px;
+}
+
+.membershipIncludedItem {
+  min-height: 42px;
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  align-items: center;
+  border-bottom: 1px solid rgba(203, 243, 223, 0.3);
+}
+
+.membershipIncludedIcon {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #d6efe2;
+  border-radius: 999px;
+  display: inline-block;
+  justify-self: center;
+}
+
+.membershipIncludedIconWrap {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+}
+
+.membershipIncludedFeatureIcon {
+  width: 22px;
+  height: 22px;
+  color: #e6f6ee;
+}
+
+.membershipIncludedLabel {
+  color: #f1f5f3;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.membershipManageButton {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid #00d881;
+  background: #07753f;
+  color: #f4fff9;
+  font-size: 38px;
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 0 18px;
+  margin-top: 8px;
+}
+
+.membershipManageButton span:first-child {
+  justify-self: center;
+  text-align: center;
+}
+
+.membershipManageArrow {
+  font-size: 50px;
+  line-height: 1;
+}
+
+.membershipCancelButton {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: #ff1a1a;
+  font-size: 34px;
+  font-weight: 500;
+  text-align: center;
+  padding: 12px 0 0;
+}
+
+.membershipJoinButton {
+  width: 100%;
+  min-height: 56px;
+  border: none;
+  border-radius: 999px;
+  background: #cfcfcf;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 8px 5px 4px;
+}
+
+.membershipJoinButtonIcon {
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  background: #08d97d;
+  color: #04321d;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  line-height: 1;
+}
+
+.membershipJoinButtonText {
+  text-align: left;
+  color: #6f6f6f;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.membershipCreate {
+  margin-top: 56px;
+  padding: 0 18px 120px;
+}
+
+.membershipCreateBackButton {
+  border: none;
+  background: transparent;
+  color: #b8c8c0;
+  font-size: 34px;
+  line-height: 1;
+  padding: 0;
+}
+
+.membershipCreateTitle {
+  margin: 6px 0 2px;
+  color: #f5f5f5;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+}
+
+.membershipCreateSubtitle {
+  margin: 0;
+  color: #f1f3f2;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.membershipCreateIntro {
+  margin: 8px auto 18px;
+  max-width: 760px;
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.membershipCreateSectionTitle {
+  margin: 20px 0 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #f7f7f7;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.membershipCreateSectionTitle span {
+  color: #00f299;
+  font-size: 42px;
+  line-height: 1;
+}
+
+.membershipCreateCards {
+  display: grid;
+  gap: 12px;
+}
+
+.membershipCreateCard {
+  border: 1px solid #00d881;
+  background: #000000;
+}
+
+.membershipCreateCard.isCurrent {
+  background: #05552d;
+}
+
+.membershipCreateCardAction {
+  width: 100%;
+  min-height: 128px;
+  border: none;
+  background: transparent;
+  padding: 16px 58px 14px 18px;
+  display: grid;
+  gap: 4px;
+  text-align: left;
+  position: relative;
+  color: #f8fbf9;
+}
+
+.membershipCreatePlanName {
+  color: #00f299;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.membershipCreatePlanPrice {
+  color: #f6fff9;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.membershipCreatePlanDescription {
+  color: #e5f8ee;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.membershipCreateCurrentBadge {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #ff8a00;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 8px 12px;
+}
+
+.membershipCreateCompareLink {
+  border: none;
+  background: transparent;
+  color: #00f299;
+  font-size: 44px;
+  font-weight: 500;
+  text-decoration: underline;
+  margin: 22px auto 0;
+  display: block;
+  text-align: center;
+}
+
+.membershipCreateCardTopLine {
+  color: #00f299;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.membershipCreateCardDescription {
+  color: #eaf4ef;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.membershipCreateReadMore {
+  margin-top: 10px;
+  color: #f4fbf7;
+  font-size: 32px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.membershipCreateChevron {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #00f299;
+  font-size: 56px;
+  line-height: 1;
+}
+
+.membershipCreatePayAsYouGoCard .membershipCreateCardAction {
+  min-height: 88px;
+}
+
+.membershipCreatePayAsYouGoText {
+  max-width: 100%;
+  font-size: 38px;
+  font-weight: 500;
+}
+
+.membershipCancelView {
+  margin-top: 74px;
+  padding: 0 18px 120px;
+}
+
+.membershipCancelTitle {
+  margin: 8px 0 0;
+  color: #f5f5f5;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 1.04;
+  text-align: center;
+}
+
+.membershipCancelSubtitle {
+  margin: 8px 0 18px;
+  color: #f0f0f0;
+  font-size: 34px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.membershipCancelNote {
+  margin: 10px 0 0;
+  color: #8d8d8d;
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.membershipCancelReasonTitle {
+  margin: 24px 0 12px;
+  color: #f2f2f2;
+  font-size: 22px;
+  font-weight: 700;
+
+}
+
+.membershipCancelReasonList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.membershipCancelReasonButton {
+  min-height: 34px;
+  border: 1px solid #404a48;
+  background: transparent;
+  color: #f2f2f2;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 20px;
+}
+
+.membershipCancelReasonButton.isSelected {
+  border-color: #00d881;
+  background: rgba(0, 216, 129, 0.2);
+  color: #e2fff2;
+}
+
+.membershipCancelConfirmButton {
+  width: 100%;
+  min-height: 56px;
+  margin-top: 84px;
+  border: 1px solid #ff3e3e;
+  background: #7f0202;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.profileMenuItem {
+  width: 100%;
+  height: 58px;
+  border: 1px solid #00d881;
+  border-radius: 0;
+  background: #066632;
+  color: #eaf3ef;
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr) 24px;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  font-size: 34px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.menuIcon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: #fff;
+}
+
+.menuLabel {
+  min-width: 0;
+  justify-self: center;
+  line-height: 1;
+  font-size: clamp(26px, 6.8vw, 34px);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.menuChevron {
+  justify-self: end;
+  color: #00e592;
+  font-size: 36px;
+  line-height: 1;
+}
+
+.logoutOverlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 100;
+  padding-bottom: 88px;
+}
+
+.logoutModal {
+  width: calc(100% - 36px);
+  max-width: 504px;
+  background: #066632;
+  border: 1px solid #00d881;
+  padding: 20px 16px 16px;
+}
+
+.logoutQuestion {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin: 0 0 16px;
+}
+
+.logoutActions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.logoutConfirm,
+.logoutCancel {
+  height: 50px;
+  border: 1px solid #00d881;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}
+
+.logoutConfirm {
+  background: #5c1a1a;
+}
+
+.logoutCancel {
+  background: #066632;
+}
+
+.profileDetails {
+  margin-top: 74px;
+  padding: 0 18px;
+}
+
+.profileBackButton {
+  border: none;
+  background: transparent;
+  color: #e8e8e8;
+  font-size: 30px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 0;
+  margin-bottom: 14px;
+}
+
+.profileBackButton span {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.detailsForm {
+  display: grid;
+  gap: 16px;
+  /* padding-bottom: 130px; */
+}
+
+.detailsFormTitle {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+  color: #f2f2f2;
+}
+
+.detailsFormHint {
+  margin: -8px 0 2px;
+  color: #9cecc7;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.detailsField {
+  border: 1px solid #00d881;
+  background: #066632;
+  min-height: 64px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+  align-items: center;
+  padding: 10px 12px;
+}
+
+.detailsFieldLabelWrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.detailsFieldIcon {
+  width: 22px;
+  height: 22px;
+  color: #f6f6f6;
+  flex-shrink: 0;
+}
+
+.detailsFieldLabel {
+  color: #f0f6f3;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.detailsFieldInput {
+  width: 100%;
+  min-width: 0;
+  border: 1px dashed rgba(0, 216, 129, 0.4);
+  outline: none;
+  background: transparent;
+  color: #d8f8e8;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 0;
+  pointer-events: none;
+}
+
+.detailsFieldInput:not(:read-only) {
+  border: 1px dashed #00d881;
+  pointer-events: auto;
+}
+
+.detailsFieldInput:read-only:focus {
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+.detailsFieldInput::placeholder {
+  color: #c5e8d7;
+}
+
+.detailsFieldInput:not(:read-only) {
+  border: 1px dashed #ffffff;
+  pointer-events: auto;
+}
+.detailsConfirm {
+  background: #5c1a1a;
+  color: #fff;
+}
+.detailsCancel {
+  background: #066632;
+  color: #fff;
+}
+.detailsFieldValueRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 32px;
+  padding: 8px 10px;
+  background: rgba(0, 0, 0, 0.22);
+}
+
+.detailsFieldEditableTag {
+  flex-shrink: 0;
+  color: #b6f6d7;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  opacity: 0.95;
+}
+
+.detailsField:focus-within .detailsFieldValueRow {
+  border-color: #ebfff4;
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.detailsFieldInput::placeholder {
+  color: #c5e8d7;
+}
+
+.detailsSaveButton {
+  margin-top: 6px;
+  height: 54px;
+  border: 1px solid #00d881;
+  /* background: #00d881; */
+  /* opacity: 0.75; */
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 0 60px;
+}
+.detailsCancel {
+  background: #066632;
+  color: #fff;
+}
+.detailsConfirm {
+  background: #5c1a1a;
+  color: #fff;
+}
+.detailsSaveMessage {
+  margin: 0;
+  color: #8ef5c4;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+@media (max-width: 720px) {
+  .membershipView {
+    margin-top: 60px;
+  }
+
+  .membershipOptionsList {
+    margin-top: 28px;
+    gap: 28px;
+  }
+
+  .membershipOptionCard {
+    min-height: 96px;
+    padding: 12px;
+    gap: 12px;
+    grid-template-columns: 66px 1fr 66px;
+  }
+
+  .membershipOptionIconWrap {
+    width: 66px;
+    height: 66px;
+  }
+
+  .membershipOptionIcon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .membershipOptionLabel {
+    font-size: 28px;
+  }
+
+  .membershipDetails {
+    margin-top: 12px; /*60px*/
+    padding: 0 18px 8px;
+  }
+
+  .membershipPlanCard {
+    min-height: 96px;
+    grid-template-columns: 66px 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .membershipPlanIconWrap {
+    width: 66px;
+    height: 66px;
+    margin-left: 20px;
+
+  }
+
+  .membershipPlanIconGroup {
+    font-size: 17px;
+  }
+
+  .membershipPlanPeopleIcon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .membershipPlanName {
+    font-size: 32px;
+  }
+
+  .membershipPlanPrice {
+    font-size: 24px;
+  }
+
+  .membershipPlanDate {
+    font-size: 14px;
+  }
+
+  .membershipPlanSubtitle {
+    font-size: 23px;
+  }
+
+  .membershipPlanDetails {
+    margin-top: 0px;
+    padding: 0 18px 30px;
+  }
+
+  .membershipIncludedTitle {
+    font-size: 18px;
+    margin-top: 12px;
+  }
+
+  .membershipIncludedItem {
+    min-height: 38px;
+    grid-template-columns: 30px 1fr;
+    gap: 20px
+  }
+
+  .membershipIncludedIcon {
+    width: 16px;
+    height: 16px;
+    border-width: 1px;
+  }
+
+  .membershipIncludedFeatureIcon {
+    width: 17px;
+    height: 17px;
+  }
+
+  .membershipIncludedLabel {
+    font-size: 16px;
+  }
+
+  .membershipManageButton {
+    min-height: 46px;
+    font-size: 18px;
+  }
+
+  .membershipManageArrow {
+    font-size: 44px;
+  }
+
+  .membershipCancelButton {
+    font-size: 14px;
+  }
+
+  .membershipJoinButton {
+    min-height: 52px;
+    padding: 4px 7px 4px 4px;
+  }
+
+  .membershipJoinButtonIcon {
+    width: 42px;
+    height: 42px;
+    font-size: 34px;
+  }
+
+  .membershipJoinButtonText {
+    font-size: 28px;
+  }
+
+  .membershipCreate {
+    margin-top: 0px;
+    padding: 0 18px 30px;
+  }
+
+  .membershipCreateBackButton {
+    font-size: 30px;
+  }
+
+  .membershipCreateTitle {
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .membershipCreateSubtitle {
+    font-size: 24px;
+  }
+
+  .membershipCreateIntro {
+    font-size: 16px;
+    margin-bottom: 16px;
+    margin-inline: 20px;
+    text-align: center;
+  }
+
+  .membershipCreateSectionTitle {
+    font-size: 40px;
+    margin: 16px 0 10px;
+  }
+
+  .membershipCreateSectionTitle span {
+    font-size: 32px;
+  }
+
+.membershipCreateCardAction {
+  width: 100%;
+  min-height: 98px;
+  border: none;
+  background: transparent;
+  padding: 10px 40px 10px 12px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  position: relative;
+  color: #f8fbf9;
+}
+.membershipCreatePlanInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px;
+}
+
+.membershipCreatePayAsYouGoCard .membershipCreateCardAction {
+  min-height: 84px;
+}
+
+  .membershipCreatePlanName {
+    font-size: 32px;
+  }
+
+  .membershipCreatePlanPrice {
+    font-size: 24px;
+  }
+
+  .membershipCreatePlanDescription {
+    font-size: 14px;
+  }
+
+  .membershipCreateCurrentBadge {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .membershipCreateCompareLink {
+    font-size: 16px;
+    margin-top: 32px;
+    text-align: center;
+  }
+
+  .membershipCreateCardTopLine {
+    font-size: 36px;
+  }
+
+  .membershipCreateCardDescription {
+    font-size: 32px;
+  }
+
+  .membershipCreateReadMore {
+    margin-top: 8px;
+    font-size: 26px;
+  }
+
+  .membershipCreateChevron {
+    font-size: 48px;
+    right: 10px;
+  }
+
+  .membershipCreatePayAsYouGoCard .membershipCreateCardAction {
+    min-height: 84px;
+  }
+
+  .membershipCreatePayAsYouGoText {
+    font-size: 30px;
+  }
+
+  .membershipCancelView {
+    margin-top: 0px;
+    padding: 0 18px 30px;
+  }
+
+  .membershipCancelTitle {
+    font-size: 44px;
+  }
+
+  .membershipCancelSubtitle {
+    font-size: 27px;
+  }
+
+  .membershipCancelNote {
+    font-size: 13px;
+  }
+
+  .membershipCancelReasonTitle {
+    font-size: 16px;
+  }
+
+  .membershipCancelReasonButton {
+    min-height: 32px;
+    font-size: 15px;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  .membershipCancelConfirmButton {
+    min-height: 52px;
+    margin-top: 40px;
+    font-size: 32px;
+  }
+
+  .profileDetails {
+    margin-top: 10px;
+  }
+
+  .profileBackButton {
+    font-size: 28px;
+  }
+
+  .detailsForm {
+    gap: 14px;
+  }
+
+  .detailsFormTitle {
+    font-size: 22px;
+  }
+
+  .detailsFormHint {
+    font-size: 12px;
+  }
+
+  .detailsField {
+    min-height: 58px;
+    padding: 9px 10px;
+  }
+
+  .detailsFieldLabel {
+    font-size: 20px;
+  }
+
+  .detailsFieldInput {
+    font-size: 14px;
+  }
+
+  .detailsFieldValueRow {
+    margin-left: 30px;
+    padding: 7px 8px;
+  }
+
+  .detailsFieldEditableTag {
+    font-size: 9px;
+  }
+
+  .detailsSaveButton {
+    font-size: 16px;
+    height: 50px;
+  }
+
+  .detailsSaveMessage {
+    font-size: 13px;
+  }
+}
+
+.membershipManageButton:hover {
+  background: #099e5a;
+  color: #ffffff;
+  border-color: #00ffae;
+}
+.membershipCancelButton:hover {
+  color: #ff6666;
+}
+.membershipJoinButton:hover {
+  background: #b2f5d6;
+}
+
+.membershipPaymentView {
+  margin-top: 74px;
+  padding: 0 18px 120px;
+  min-height: calc(100vh - 160px);
+  position: relative;
+}
+
+.membershipPaymentTitle {
+  margin: 18px 0 24px;
+  color: #f4f7f5;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 1.03;
+}
+
+.membershipPaymentList {
+  display: grid;
+  gap: 14px;
+}
+
+.membershipPaymentFields {
+  margin-top: 16px;
+  display: grid;
+  gap: 10px;
+}
+
+.membershipPaymentFieldLabel {
+  color: #8e94a1;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.membershipPaymentFieldInput {
+  width: 100%;
+  min-height: 56px;
+  border: 1px solid #00d881;
+  background: #020202;
+  color: #f6f8f7;
+  padding: 8px 12px;
+  font-size: 18px;
+  outline: none;
+}
+
+.membershipPaymentFieldRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.membershipPaymentFieldCol {
+  display: grid;
+  gap: 10px;
+}
+
+.membershipPaymentOption {
+  width: 100%;
+  border: 1px solid #00d881;
+  background: #020202;
+  min-height: 92px;
+  display: grid;
+  grid-template-columns: 36px 60px 1fr;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px;
+  color: #f6f8f7;
+  text-align: left;
+}
+
+.membershipPaymentOption.isSelected {
+  background: #083c25;
+}
+
+.membershipPaymentRadio {
+  width: 30px;
+  height: 30px;
+  color: #00f299;
+}
+
+.membershipPaymentIcon {
+  width: 48px;
+  height: 48px;
+  color: #f6f8f7;
+}
+
+.membershipPaymentTextWrap {
+  display: grid;
+  gap: 3px;
+}
+
+.membershipPaymentName {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.membershipPaymentMeta {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.membershipPaymentNext {
+  position: absolute;
+  right: 18px;
+  bottom: 26px;
+  width: 74px;
+  height: 74px;
+  border: none;
+  border-radius: 999px;
+  background: #12db81;
+  color: #05311d;
+  font-size: 40px;
+  display: grid;
+  place-items: center;
+}
+
+.membershipCreateBackButton:hover {
+  color: #00d881;
+}
+.profileBackButton:hover {
+  color: #00d881;
+}
+.membershipPaymentOption:hover {
+  background: #103e2a;
+}
+.membershipPaymentNext:hover {
+  background: #14ef8d;
+}
+
+.membershipChangeSuccessView {
+  min-height: calc(100vh - 120px);
+  padding: 24px 18px 46px;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.membershipChangeSuccessTitle {
+  margin: 0;
+  color: #f7f8f7;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.membershipChangeSuccessIconWrap {
+  margin-top: 82px;
+}
+
+.membershipChangeSuccessIcon {
+  width: 96px;
+  height: 96px;
+  color: #12db81;
+}
+
+.membershipChangeSuccessHeading {
+  margin: 86px 0 0;
+  color: #12db81;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.05;
+  max-width: 88%;
+}
+
+.membershipChangeSuccessSubtext {
+  margin: 14px 0 0;
+  color: #f2f5f3;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.membershipChangeSuccessNext {
+  position: absolute;
+  right: 18px;
+  bottom: 22px;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 999px;
+  background: #12db81;
+  /* color: #05311d; */
+  color: #fff;
+  font-size: 40px;
+  display: grid;
+  place-items: center;
+}
+
+.membershipChangeSuccessNext:hover {
+  background: #14ef8d;
+}
+
+@media (max-width: 720px) {
+  .membershipChangeSuccessTitle {
+    font-size: 28px;
+  }
+
+  .membershipChangeSuccessIconWrap {
+    margin-top: 44px;
+  }
+
+  .membershipChangeSuccessIcon {
+    width: 62px;
+    height: 62px;
+  }
+
+  .membershipChangeSuccessHeading {
+    margin-top: 56px;
+    font-size: 22px;
+  }
+
+  .membershipChangeSuccessSubtext {
+    font-size: 12px;
+  }
+}
+.detailsSaveButton:hover {
+  background: linear-gradient(135deg, #099e5a 0%, #0bcc73 100%);
+  color: #ffffff;
+  border-color: #00ffae;
+}
+.membershipCancelConfirmButton:hover {
+  background: #ff3e3e;
+  color: #fffbe6;
+  border-color: #ff7f7f;
+}
+.profileMenuItem:hover {
+  background: #099e5a;
+  color: #ffffff;
+  border-color: #00ffae;
+}
+.betalingsOverlay{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.batalingPopup{
+    background: var(--background);
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: auto;
+   h1{
+    margin: 0 0 40px 0;
+    }
+  .detailsSaveButton{
+    width: 100%;
+  } 
+  input[type="radio"]:checked{
+    appearance: none;
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    background-color: #06C167;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+  input[type="radio"]{
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    border: 1px solid  #0CE578;
+  }
+  input[type="text"]{
+    padding: 8px 16px;
+    border: 1px solid  #0CE578;
+    margin-bottom: 16px;
+  }
+  .button{
+    border: 1px solid  #0CE578;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 16px;
+  }
+  h1{
+    margin:40px 0;
+  }
+  h3{
+    color: #FFF;
+  
+/* mobil/h4 */
+
+text-align: justify;
+font-size: 20px;
+font-style: normal;
+font-weight: 800;
+line-height: 24px; /* 120% */
+  }
+  h4{
+    
+    text-align: justify;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 29px; /* 120.833% */
+}
+label{
+  color: var(--secondary-dark-mode-80-gr-text-secondary, rgba(156, 163, 175, 0.80));
+    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 19px; /* 118.75% */
+    margin-bottom: 6px;
+}
+}
+
+
+.deleteAccountBtn {
+  background: none;
+  border: none;
+  color: #e53935;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 16px;
+  width: 100%;
+}
